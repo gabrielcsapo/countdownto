@@ -10,7 +10,7 @@ module.exports = {
     type: "text",
     value: `
       \`\`\`
-      npm install countdownto --save
+      npm install @gabrielcsapo/countdownto --save
       \`\`\`
 
       <img src="./example.gif" alt="example" style="width: 100%;">
@@ -23,7 +23,7 @@ module.exports = {
     title: "Creating a simple countdownto object",
     subtitle: "This shows how to get the human readable diff between the dates",
     value: `
-        const Countdownto = require('countdownto');
+        const Countdownto = require('@gabrielcsapo/countdownto');
 
         let countdown = new Countdownto(new Date('12/20/2020'), new Date('12/19/2020'));
 

@@ -1,6 +1,6 @@
 {
   "name": "@gabrielcsapo/countdownto",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "⏳ the countdown starts, when will it end?",
   "main": "index.js",
   "bin": {
@@ -10,7 +10,7 @@
     "lint": "eslint index.js test/**.js",
     "test": "tape test/**.js",
     "coverage": "tap test/*.js --coverage --coverage-report=lcov",
-    "build": "browserify -r ./index.js:countdownto -t [ brfs ] -t [ babelify --presets [ env ]]  > dist/countdownto.js && minify dist/countdownto.js --out-file dist/countdownto.min.js",
+    "build": "browserify -r ./index.js:@gabrielcsapo/countdownto -t [ brfs ] -t [ babelify --presets [ env ]]  > dist/countdownto.js && minify dist/countdownto.js --out-file dist/countdownto.min.js",
     "generate-docs": "tryitout"
   },
   "repository": {

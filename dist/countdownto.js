@@ -184,7 +184,7 @@ process.chdir = function (dir) {
 };
 process.umask = function() { return 0; };
 
-},{}],"countdownto":[function(require,module,exports){
+},{}],"@gabrielcsapo/countdownto":[function(require,module,exports){
 (function (process){
 class Time {
   /**
