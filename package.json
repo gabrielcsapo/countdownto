@@ -1,0 +1,39 @@
+{
+  "name": "@gabrielcsapo/countdownto",
+  "version": "0.0.1",
+  "description": "⏳ the countdown starts, when will it end?",
+  "main": "index.js",
+  "bin": {
+    "countdownto": "./bin/index.js"
+  },
+  "scripts": {
+    "lint": "eslint index.js test/**.js",
+    "test": "tape test/**.js",
+    "coverage": "tap test/*.js --coverage --coverage-report=lcov",
+    "build": "browserify -r ./index.js:countdownto -t [ brfs ] -t [ babelify --presets [ env ]]  > dist/countdownto.js && minify dist/countdownto.js --out-file dist/countdownto.min.js",
+    "generate-docs": "tryitout"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gabrielcsapo/countdownto.git"
+  },
+  "author": "Gabriel J. Csapo",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/gabrielcsapo/countdownto/issues"
+  },
+  "homepage": "https://github.com/gabrielcsapo/countdownto#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-minify": "^0.2.0",
+    "babel-preset-env": "^1.6.1",
+    "babelify": "^8.0.0",
+    "brfs": "^1.4.3",
+    "browserify": "^14.5.0",
+    "eslint": "^4.13.1",
+    "tap": "^11.0.0",
+    "tape": "^4.8.0",
+    "tryitout": "^1.2.3"
+  }
+}
