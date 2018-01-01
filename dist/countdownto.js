@@ -230,8 +230,10 @@ class Time {
    */
   toString() {
     let output = '';
+
     if(this.years) output += `${this.years}y `;
     if(this.days) output += `${this.days}d `;
+    if(this.hours) output += `${this.hours}h `;
     if(this.minutes) output += `${this.minutes}m `;
     if(this.seconds) output += `${this.seconds}s `;
     if(this.milleseconds) output += `${this.milleseconds}ms `;

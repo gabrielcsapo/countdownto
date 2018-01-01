@@ -1,6 +1,6 @@
 {
   "name": "@gabrielcsapo/countdownto",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "⏳ the countdown starts, when will it end?",
   "main": "index.js",
   "bin": {
